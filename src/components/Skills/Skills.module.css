@@ -1,0 +1,15 @@
+.container {
+  grid-row: 3/4;
+  grid-column: 2/4;
+  border-radius: 25px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+  transition: 0.2s;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
