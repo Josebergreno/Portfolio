@@ -3,8 +3,10 @@ import Contact from "./components/Contact/Contact";
 import PastProjects from "./components/PastProjects/PastProjects";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import video from "./UI/paper-image.mp4";
 
 const App = () => {
+  console.log(video);
   const colorTheme = {
     blue: "#4717F6",
     black: "#0e0B16",
@@ -14,6 +16,9 @@ const App = () => {
 
   return (
     <div className={styles["page-container"]}>
+      <video muted autoPlay loop className={styles["video"]}>
+        <source src={video} type={"video/mp4"}></source>
+      </video>
       <Skills />
       <Contact />
       <PastProjects />
