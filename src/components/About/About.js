@@ -1,12 +1,12 @@
 import styles from "./About.module.css";
 
-import QuizIcon from "@mui/icons-material/Quiz";
-
 const About = (props) => {
   return (
     <div className={styles["container"]}>
-      <div className={styles["about"]}>About</div>
-      <QuizIcon />
+      <h1 className={styles["header"]}>Hi, I'm Joe. Web Developer.</h1>
+      <div className={styles["logo-container"]}>
+        <div className={styles["logo"]}></div>
+      </div>
     </div>
   );
 };
