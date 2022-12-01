@@ -1,3 +1,5 @@
+/* for the starting page */
+
 .page-container {
   margin: 0;
   width: 100vw;
@@ -6,27 +8,24 @@
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-color: #0e0b16;
-  /* background-image: url(./paper-image.avif); */
-  animation-name: example;
-  animation-duration: 10s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  background-color: rgb(12, 106, 12);
 }
 
-.video {
+/* .video {
   height: 100vh;
   width: 100vw;
   position: fixed;
   object-fit: cover;
   z-index: -1;
-}
-
-/* @keyframes example {
-  from {
-    background-image: url(./paper-image.avif);
-  }
-  to {
-    background-color: lightgray;
-  }
 } */
+
+/* after clicking on a page */
+.pages-container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20fr 80fr 20fr;
+  grid-template-rows: 20fr 80fr 20fr;
+  background-color: rgb(12, 106, 12);
+}

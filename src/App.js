@@ -4,6 +4,7 @@ import PastProjects from "./components/PastProjects/PastProjects";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import video from "./UI/paper-image.mp4";
+import CommandLine from "./components/CommandLine.js/CommandLine";
 
 const App = () => {
   console.log(video);
@@ -15,14 +16,14 @@ const App = () => {
   };
 
   return (
-    <div className={styles["page-container"]}>
-      {/* <video muted autoPlay loop className={styles["video"]}>
-        <source src={video} type={"video/mp4"}></source>
-      </video> */}
-      <Skills />
-      <Contact />
-      <PastProjects />
-      <About />
+    // <div className={styles["page-container"]}>
+    //   {/* <Skills />
+    //   <Contact />
+    //   <PastProjects />
+    //   <About /> */}
+    // </div>
+    <div className={styles["pages-container"]}>
+      <CommandLine />
     </div>
   );
 };

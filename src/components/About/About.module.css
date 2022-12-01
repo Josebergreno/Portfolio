@@ -56,6 +56,10 @@
   width: 50%;
   border-radius: 50%;
 }
+.joe {
+  color: rgb(60, 170, 60);
+  font-size: 150%;
+}
 
 .logo-container {
   display: flex;
