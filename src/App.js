@@ -16,9 +16,9 @@ const App = () => {
 
   return (
     <div className={styles["page-container"]}>
-      <video muted autoPlay loop className={styles["video"]}>
+      {/* <video muted autoPlay loop className={styles["video"]}>
         <source src={video} type={"video/mp4"}></source>
-      </video>
+      </video> */}
       <Skills />
       <Contact />
       <PastProjects />

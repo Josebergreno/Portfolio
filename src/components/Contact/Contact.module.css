@@ -18,4 +18,34 @@
 
 .container:hover {
   transform: scale(1.02);
+  text-decoration: none;
+}
+.container:visited {
+  text-decoration: none;
+  color: black;
+}
+.container:link {
+  text-decoration: none;
+}
+.contact {
+  font-family: "Press Start 2P", cursive;
+}
+
+.contact-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+@media (max-width: 550px) {
+  .contact {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 551px) {
+  .contact {
+    font-size: 120%;
+  }
 }

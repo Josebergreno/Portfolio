@@ -1,12 +1,14 @@
 import styles from "./Skills.module.css";
-import SendIcon from "@mui/icons-material/Send";
+import CodeIcon from "@mui/icons-material/Code";
 
 const Skills = (props) => {
   return (
-    <div key="skills" className={styles["container"]}>
-      <div>Skills</div>
-      <SendIcon></SendIcon>
-    </div>
+    <a href="www.google.com" className={styles["container"]}>
+      <div className={styles["skills-container"]}>
+        <div className={styles["skills"]}>Skills</div>
+        <CodeIcon />
+      </div>
+    </a>
   );
 };
 

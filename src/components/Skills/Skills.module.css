@@ -17,5 +17,37 @@
 }
 
 .container:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
+  text-decoration: none;
+}
+.container:visited {
+  text-decoration: none;
+  color: black;
+}
+.container:link {
+  text-decoration: none;
+}
+
+.skills {
+  font-family: "Press Start 2P", cursive;
+}
+
+.skills-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+@media (max-width: 550px) {
+  .skills {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 551px) {
+  .skills {
+    font-size: 120%;
+  }
 }

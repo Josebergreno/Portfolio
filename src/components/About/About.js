@@ -1,24 +1,29 @@
 import styles from "./About.module.css";
 import logo from "../../UI/logo-cropped.svg";
 import avatar from "../../UI/avatar.svg";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 const About = (props) => {
-  console.log(avatar);
+  const boxShadow = {
+    boxShadow: [
+      "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset",
+      "rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset",
+      "rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset",
+      "rgba(0, 0, 0, 0.06) 0px 2px 1px",
+      "rgba(0, 0, 0, 0.09) 0px 4px 2px",
+      " rgba(0, 0, 0, 0.09) 0px 8px 4px",
+      "rgba(0, 0, 0, 0.09) 0px 16px 8px",
+      "rgba(0, 0, 0, 0.09) 0px 32px 16px",
+    ],
+  };
+  console.log(...boxShadow.boxShadow);
 
   return (
-    <div className={styles["container"]}>
+    <a href="www.google.com" className={styles["container"]}>
       <div className={styles["header-container"]}>
-        <Typography
-          variant="h2"
-          sx={{
-            fontSize: "10vmin",
-            color: "black",
-            gridColumn: "2/6",
-          }}
-        >
+        <h1 className={styles["header"]}>
           Hi, I'm <span className={styles["joe"]}>Joe</span>. Web Developer
-        </Typography>
+        </h1>
       </div>
       <div className={styles["avatar-container"]}>
         <img src={avatar} alt={"avatar"} className={styles["avatar"]} />
@@ -27,7 +32,7 @@ const About = (props) => {
       <div className={styles["logo-container"]}>
         <img className={styles["logo"]} src={logo} alt={"Logo"} />
       </div>
-    </div>
+    </a>
   );
 };
 

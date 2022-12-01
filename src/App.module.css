@@ -6,7 +6,7 @@
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  /* background-color: #0e0b16; */
+  background-color: #0e0b16;
   /* background-image: url(./paper-image.avif); */
   animation-name: example;
   animation-duration: 10s;

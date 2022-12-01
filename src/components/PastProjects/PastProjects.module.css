@@ -17,21 +17,35 @@
 
 .container:hover {
   transform: scale(1.01);
+  text-decoration: none;
+}
+.container:visited {
+  text-decoration: none;
+  color: black;
+}
+.container:link {
+  text-decoration: none;
 }
 
 .past-projects {
-  animation-name: example;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  font-family: "Press Start 2P", cursive;
 }
 
-/* @keyframes example {
-  from {
-    background-color: red;
-    translate: 0 -200%;
+.past-projects--container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+@media (max-width: 550px) {
+  .past-projects {
+    font-size: 100%;
   }
-  to {
-    background-color: yellow;
+}
+
+@media (min-width: 551px) {
+  .past-projects {
+    font-size: 120%;
   }
-} */
+}
