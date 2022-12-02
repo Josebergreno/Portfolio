@@ -1,7 +1,6 @@
 import styles from "./About.module.css";
 import logo from "../../UI/logo-cropped.svg";
 import avatar from "../../UI/avatar.svg";
-import { Button, Typography } from "@mui/material";
 
 const About = (props) => {
   const boxShadow = {
