@@ -23,6 +23,7 @@ const CommandLine = () => {
   // typing function for changing folders
   const CurrentLocation = "C:Users\\Joseph\\Desktop\\josephs-portfolio>";
 
+  // big function
   useEffect(() => {
     const interval = setInterval(() => {
       setCounting((prev) => prev + 1);
@@ -64,8 +65,8 @@ const CommandLine = () => {
         </div>
         <div className={styles["code"]}>
           {CurrentLocation}
-          <div className={styles["typing"]}>|</div>
           <div className={styles["element"]}>{typing}</div>
+          <div className={styles["typing"]}>|</div>
         </div>
       </div>
     </div>
