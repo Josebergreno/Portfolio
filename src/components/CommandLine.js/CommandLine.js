@@ -12,7 +12,8 @@ const CommandLine = () => {
     projects: "cd Past Projects",
     skills: "cd Skills",
   };
-  const [typing, setTyping] = useState(directory.about);
+  const [typing, setTyping] = useState("");
+  const [counter, setCounting] = useState(0);
 
   // updating first line date
   const today = new Date().toDateString();
@@ -24,14 +25,21 @@ const CommandLine = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setCounting((prev) => prev + 1);
       setTyping((prev) => {
-        return prev;
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+        const array = [...directory.about];
+        const filter = array.filter((val, i) => {
+          if (i === counter) {
+            array.splice(1);
+            return val;
+          }
+        });
 
-  //   typing();
+        return [...prev, ...filter];
+      });
+    }, 300);
+    return () => clearInterval(interval);
+  }, [typing, counter, directory.about]);
 
   //create a flashing typing effect div that blinks 5 times and then trigger the typing function
 
@@ -57,7 +65,7 @@ const CommandLine = () => {
         <div className={styles["code"]}>
           {CurrentLocation}
           <div className={styles["typing"]}>|</div>
-          <div className={styles["element"]}>{directory.about}</div>
+          <div className={styles["element"]}>{typing}</div>
         </div>
       </div>
     </div>
