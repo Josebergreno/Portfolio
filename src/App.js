@@ -7,7 +7,6 @@ import video from "./UI/paper-image.mp4";
 import CommandLine from "./components/CommandLine.js/CommandLine";
 
 const App = () => {
-  console.log(video);
   const colorTheme = {
     blue: "#4717F6",
     black: "#0e0B16",

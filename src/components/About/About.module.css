@@ -60,6 +60,13 @@
   color: rgb(60, 170, 60);
   font-size: 150%;
 }
+.logo {
+  border: black solid 0.2px;
+  height: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .logo-container {
   display: flex;
@@ -71,13 +78,6 @@
   animation-direction: normal;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-.logo {
-  border: black solid 0.2px;
-  height: 50%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @keyframes logo {
