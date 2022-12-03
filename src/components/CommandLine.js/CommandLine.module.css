@@ -21,7 +21,7 @@
 }
 
 .main-container {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-row: 2/3;
@@ -35,13 +35,23 @@
   font-size: smaller;
 }
 
-.grouping {
+.left-grouping {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-grouping {
+  margin-right: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .first-line {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 5px;
   grid-row: 2/3;
   padding-left: 10px;
@@ -51,6 +61,8 @@
 }
 
 .second-line {
+  display: flex;
+  flex-wrap: wrap;
   grid-row: 3/4;
   padding-left: 10px;
   font-family: "Space Mono", monospace;
@@ -60,12 +72,17 @@
 
 .code {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   grid-row: 5/6;
   padding-left: 10px;
-  font-size: smaller;
+  font-size: small;
   font-family: "Space Mono", monospace;
   color: white;
+}
+.element {
+  color: blue;
+  margin-left: 5px;
 }
 
 .typing {

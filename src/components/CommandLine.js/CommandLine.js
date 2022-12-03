@@ -49,11 +49,13 @@ const CommandLine = () => {
       <div className={styles["command-line--container"]}>
         <div className={styles["top-bar"]}>
           <div>
-            <KeyboardOutlinedIcon fontSize="small" />
-            <span className={styles["title"]}>Joe's Command Line</span>
+            <div className={styles["left-grouping"]}>
+              <KeyboardOutlinedIcon fontSize="small" />
+              <span className={styles["title"]}>Joe's Command Line</span>
+            </div>
           </div>
 
-          <div className={styles["grouping"]}>
+          <div className={styles["right-grouping"]}>
             <MinimizeOutlinedIcon fontSize="small" />
             <CropSquareOutlinedIcon fontSize="small" />
             <CloseOutlinedIcon fontSize="small" />
