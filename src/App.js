@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import video from "./UI/paper-image.mp4";
 import CommandLine from "./components/CommandLine.js/CommandLine";
+import Folders from "./components/CommandLine.js/Folders";
 
 const App = () => {
   const colorTheme = {
@@ -23,6 +24,7 @@ const App = () => {
     // </div>
     <div className={styles["pages-container"]}>
       <CommandLine />
+      <Folders />
     </div>
   );
 };

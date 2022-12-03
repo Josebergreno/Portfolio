@@ -6,6 +6,12 @@ import KeyboardOutlinedIcon from "@mui/icons-material/KeyboardOutlined";
 import { useEffect, useState } from "react";
 
 const CommandLine = () => {
+  const iconSize = () => {
+    if (window.innerWidth < 550) {
+      return "medium";
+    }
+  };
+
   const directory = {
     about: "cd About",
     contact: "cd Contact",
@@ -42,36 +48,48 @@ const CommandLine = () => {
     return () => clearInterval(interval);
   }, [typing, counter, directory.about]);
 
-  //create a flashing typing effect div that blinks 5 times and then trigger the typing function
-
   return (
-    <div className={styles["main-container"]}>
-      <div className={styles["command-line--container"]}>
-        <div className={styles["top-bar"]}>
-          <div>
-            <div className={styles["left-grouping"]}>
-              <KeyboardOutlinedIcon fontSize="small" />
-              <span className={styles["title"]}>Joe's Command Line</span>
+    <>
+      <div className={styles["main-container"]}>
+        <div className={styles["command-line--container"]}>
+          <div className={styles["top-bar"]}>
+            <div>
+              <div className={styles["left-grouping"]}>
+                <KeyboardOutlinedIcon
+                  fontSize="small"
+                  sx={{ fontSize: `${iconSize()}` }}
+                />
+                <span className={styles["title"]}>Joe's Command Line</span>
+              </div>
+            </div>
+
+            <div className={styles["right-grouping"]}>
+              <MinimizeOutlinedIcon
+                fontSize="small"
+                sx={{ fontSize: `${iconSize()}` }}
+              />
+              <CropSquareOutlinedIcon
+                fontSize="small"
+                sx={{ fontSize: `${iconSize()}` }}
+              />
+              <CloseOutlinedIcon
+                fontSize="small"
+                sx={{ fontSize: `${iconSize()}` }}
+              />
             </div>
           </div>
-
-          <div className={styles["right-grouping"]}>
-            <MinimizeOutlinedIcon fontSize="small" />
-            <CropSquareOutlinedIcon fontSize="small" />
-            <CloseOutlinedIcon fontSize="small" />
+          <div className={styles["first-line"]}>{firstLineUpdate()}</div>
+          <div className={styles["second-line"]}>
+            (c) Joseph's Corporation. All rights reserved.
+          </div>
+          <div className={styles["code"]}>
+            {CurrentLocation}
+            <div className={styles["element"]}>{typing}</div>
+            <div className={styles["typing"]}>|</div>
           </div>
         </div>
-        <div className={styles["first-line"]}>{firstLineUpdate()}</div>
-        <div className={styles["second-line"]}>
-          (c) Joseph's Corporation. All rights reserved.
-        </div>
-        <div className={styles["code"]}>
-          {CurrentLocation}
-          <div className={styles["element"]}>{typing}</div>
-          <div className={styles["typing"]}>|</div>
-        </div>
       </div>
-    </div>
+    </>
   );
 };
 
