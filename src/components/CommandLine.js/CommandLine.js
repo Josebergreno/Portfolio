@@ -44,7 +44,7 @@ const CommandLine = () => {
 
         return [...prev, ...filter];
       });
-    }, 300);
+    }, 350);
     return () => clearInterval(interval);
   }, [typing, counter, directory.about]);
 
