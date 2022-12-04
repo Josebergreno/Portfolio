@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./BreadCrumbs.module.css";
 
 const BreadCrumbs = (props) => {
-  console.log(props);
   return (
     <div className={styles["bread-crumb--container"]}>
       <ul className={styles["list"]}>

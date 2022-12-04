@@ -4,7 +4,7 @@ import PastProjects from "./components/PastProjects/PastProjectsLink";
 import Skills from "./components/Skills/SkillsLink";
 
 import NoMatch from "./components/NoMatch";
-import ContactPage from "./components/Contact/Page/ContactPage";
+import ContactPage from "./components/Contact/Page/PageTimer";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {

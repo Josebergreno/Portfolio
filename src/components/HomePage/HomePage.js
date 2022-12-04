@@ -4,12 +4,11 @@ import SkillsLink from "../Skills/SkillsLink";
 import ContactLink from "../Contact/Link/ContactLink";
 import PastProjectsLink from "../PastProjects/PastProjectsLink";
 import AboutLink from "../About/AboutLink";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-const HomePage = (props) => {
-  const [linkLocation, setLinkLocation] = useState("hey");
-  console.log(props);
+const HomePage = () => {
+  const [linkLocation, setLinkLocation] = useState("");
 
   const skillsHandler = () => {
     setLinkLocation("skills");

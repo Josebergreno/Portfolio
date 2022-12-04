@@ -3,6 +3,7 @@ import SendIcon from "@mui/icons-material/Send";
 import { Link, Outlet } from "react-router-dom";
 
 const ContactLink = (props) => {
+  console.log(props);
   return (
     <>
       <Link
