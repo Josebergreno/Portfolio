@@ -4,10 +4,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import HomePage from "./components/HomePage/HomePage";
-import About from "./components/About/About";
-import PastProjects from "./components/PastProjects/PastProjects";
-import Skills from "./components/Skills/Skills";
-import Contact from "./components/Contact/Contact";
+import About from "./components/About/AboutLink";
+import PastProjects from "./components/PastProjects/PastProjectsLink";
+import Skills from "./components/Skills/SkillsLink";
+
+import NoMatch from "./components/NoMatch";
+import ContactPage from "./components/Contact/Page/ContactPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +20,8 @@ root.render(
         <Route path="about" element={<About />} />
         <Route path="skills" element={<Skills />} />
         <Route path="past-projects" element={<PastProjects />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,8 +1,8 @@
-import styles from "./Contact.module.css";
+import styles from "./ContactLink.module.css";
 import SendIcon from "@mui/icons-material/Send";
 import { Link, Outlet } from "react-router-dom";
 
-const Contact = (props) => {
+const ContactLink = (props) => {
   return (
     <>
       <Link to="/contact" className={styles["container"]}>
@@ -16,4 +16,4 @@ const Contact = (props) => {
   );
 };
 
-export default Contact;
+export default ContactLink;

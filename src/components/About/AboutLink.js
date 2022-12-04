@@ -1,9 +1,9 @@
-import styles from "./About.module.css";
+import styles from "./AboutLink.module.css";
 import logo from "../../UI/logo-cropped.svg";
 import avatar from "../../UI/avatar.svg";
 import { Link, Outlet } from "react-router-dom";
 
-const About = (props) => {
+const AboutLink = (props) => {
   return (
     <>
       <Link to="/about" className={styles["container"]}>
@@ -25,4 +25,4 @@ const About = (props) => {
   );
 };
 
-export default About;
+export default AboutLink;

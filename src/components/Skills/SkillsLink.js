@@ -1,8 +1,8 @@
-import styles from "./Skills.module.css";
+import styles from "./SkillsLink.module.css";
 import CodeIcon from "@mui/icons-material/Code";
 import { Link, Outlet } from "react-router-dom";
 
-const Skills = (props) => {
+const SkillsLink = (props) => {
   return (
     <>
       <Link to="/skills" className={styles["container"]}>
@@ -16,4 +16,4 @@ const Skills = (props) => {
   );
 };
 
-export default Skills;
+export default SkillsLink;

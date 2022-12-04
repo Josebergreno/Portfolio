@@ -1,8 +1,8 @@
-import styles from "./PastProjects.module.css";
+import styles from "./PastProjectsLink.module.css";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 import { Link, Outlet } from "react-router-dom";
 
-const PastProjects = (props) => {
+const PastProjectsLink = (props) => {
   return (
     <>
       <Link to="/past-projects" className={styles["container"]}>
@@ -16,4 +16,4 @@ const PastProjects = (props) => {
   );
 };
 
-export default PastProjects;
+export default PastProjectsLink;
