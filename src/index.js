@@ -1,28 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import HomePage from "./components/HomePage/HomePage";
-import About from "./components/About/AboutLink";
-import PastProjects from "./components/PastProjects/PastProjectsLink";
-import Skills from "./components/Skills/SkillsLink";
 
-import NoMatch from "./components/NoMatch";
-import ContactPage from "./components/Contact/Page/ContactPage";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<HomePage />} />
-        <Route path="about" element={<About />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="past-projects" element={<PastProjects />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+      <App></App>
     </BrowserRouter>
   </React.StrictMode>
 );

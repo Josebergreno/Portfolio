@@ -6,7 +6,7 @@ import { Link, Outlet } from "react-router-dom";
 const AboutLink = (props) => {
   return (
     <>
-      <Link to="/about" className={styles["container"]}>
+      <Link to="/about" onClick={props.onClick} className={styles["container"]}>
         <div className={styles["header-container"]}>
           <h1 className={styles["header"]}>
             Hi, I'm <span className={styles["joe"]}>Joe</span>. Web Developer

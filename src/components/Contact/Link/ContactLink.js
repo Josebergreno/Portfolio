@@ -5,13 +5,17 @@ import { Link, Outlet } from "react-router-dom";
 const ContactLink = (props) => {
   return (
     <>
-      <Link to="/contact" className={styles["container"]}>
+      <Link
+        to="/contact"
+        onClick={props.onClick}
+        className={styles["container"]}
+      >
         <div className={styles["contact-container"]}>
           <div className={styles["contact"]}>Contact</div>
           <SendIcon />
         </div>
       </Link>
-      {/* <Outlet /> */}
+      <Outlet />
     </>
   );
 };
