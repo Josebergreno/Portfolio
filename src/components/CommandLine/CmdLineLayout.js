@@ -3,10 +3,10 @@ import CommandLine from "./CommandLine";
 import Folders from "./Folders";
 import styles from "./CmdLineLayout.module.css";
 
-const CmdLineLayout = () => {
+const CmdLineLayout = (props) => {
   return (
     <div className={styles["pages-container"]}>
-      <CommandLine />
+      <CommandLine properties={() => console.log("in cmd line layout")} />
       <Folders />
     </div>
   );

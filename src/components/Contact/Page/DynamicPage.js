@@ -1,11 +1,41 @@
 import React from "react";
 import styles from "./DynamicPage.module.css";
-import logo from "../../../UI/logo-cropped.svg";
-import avatar from "../../../UI/avatar.svg";
+import logo from "../../UI/logo-cropped.svg";
+import avatar from "../../UI/avatar.svg";
 import { Divider } from "@mui/material";
 import BreadCrumbs from "./BreadCrumbs/BreadCrumbs";
+import { useEffect, useState } from "react";
+import CmdLineLayout from "../../CommandLine/CmdLineLayout";
+import { useParams } from "react-router-dom";
 
 const DynamicPage = (props) => {
+  const { handle } = useParams();
+  console.log(handle);
+
+  const header = () => {
+    if (handle === "contact") {
+      return contentHeader[3];
+    } else if (handle === "about") {
+      return contentHeader[0];
+    } else if (handle === "past-projects") {
+      return contentHeader[2];
+    } else if (handle === "skills") {
+      return contentHeader[1];
+    }
+  };
+
+  const bodyContent = () => {
+    if (handle === "contact") {
+      return contentBody.contact;
+    } else if (handle === "about") {
+      return contentBody.about;
+    } else if (handle === "past-projects") {
+      return contentBody.pastProjects;
+    } else if (handle === "skills") {
+      return contentBody.skills;
+    }
+  };
+
   const contentHeader = ["About Me", "Skills", "Past Projects", "Contact"];
   const contentBody = {
     about: (
@@ -21,12 +51,24 @@ const DynamicPage = (props) => {
     skills: <>This is the skills page</>,
     contact: <>This is the contact page</>,
   };
-  return (
+
+  const [counter, setCounter] = useState(1);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      counter < 6 && setCounter((prev) => prev + 1);
+    }, 1000);
+    return () => clearTimeout(interval);
+  }, [counter]);
+
+  return counter < 6 ? (
+    <CmdLineLayout />
+  ) : (
     <div className={styles["layout"]}>
       <div className={styles["about"]}>
-        <h2 className={styles["header"]}>{contentHeader[2]}</h2>
+        <h2 className={styles["header"]}>{header()}</h2>
         <Divider variant="middle" />
-        <div className={styles["text-content"]}>{contentBody.pastProjects}</div>
+        <div className={styles["text-content"]}>{bodyContent()}</div>
       </div>
       <div className={styles["avatar-container"]}>
         <img src={avatar} alt={"avatar"} className={styles["avatar"]} />
@@ -34,7 +76,7 @@ const DynamicPage = (props) => {
       <div className={styles["logo-container"]}>
         <img className={styles["logo"]} src={logo} alt={"Logo"} />
       </div>
-      <BreadCrumbs contentHeader={contentHeader} />
+      <BreadCrumbs contentHeader={header()} />
     </div>
   );
 };

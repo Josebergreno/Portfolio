@@ -7,7 +7,7 @@ import AboutLink from "../About/AboutLink";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-const HomePage = () => {
+const HomePage = (props) => {
   const [linkLocation, setLinkLocation] = useState("");
 
   const skillsHandler = () => {
@@ -26,10 +26,19 @@ const HomePage = () => {
   return (
     <>
       <div className={styles["page-container"]}>
-        <SkillsLink onClick={() => skillsHandler()} />
-        <ContactLink onClick={() => contactHandler()} />
-        <PastProjectsLink onClick={() => pastProjectsHandler()} />
-        <AboutLink onClick={() => aboutHandler()} />
+        <SkillsLink
+          onClick={() => skillsHandler()}
+          linkLocation={linkLocation}
+        />
+        <ContactLink
+          onClick={() => contactHandler()}
+          linkLocation={linkLocation}
+        />
+        <PastProjectsLink
+          onClick={() => pastProjectsHandler()}
+          linkLocation={linkLocation}
+        />
+        <AboutLink onClick={() => aboutHandler()} linkLocation={linkLocation} />
       </div>
       <Outlet />
     </>

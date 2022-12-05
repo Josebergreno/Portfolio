@@ -12,7 +12,7 @@ const BreadCrumbs = (props) => {
         </li>
         <p className={styles["seperator"]}>{">"}</p>
         <li>
-          <p className={styles["current-location"]}>{props.contentHeader[2]}</p>
+          <p className={styles["current-location"]}>{props.contentHeader}</p>
         </li>
       </ul>
     </div>

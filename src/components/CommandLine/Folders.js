@@ -1,5 +1,5 @@
 import styles from "./Folders.module.css";
-import folderIcon from "../../UI/folderIcon.svg";
+import folderIcon from "../UI/folderIcon.svg";
 
 const Folders = () => {
   const folderLabels = ["About", "Contact", "Skills", "Past-Projects"];

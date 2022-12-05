@@ -102,19 +102,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 120%;
+  font-size: large;
+  line-height: 200%;
   font-family: "Press Start 2P", cursive;
-}
-
-@media (min-width: 1000px) {
-  .text-content {
-    font-size: large;
-    line-height: 200%;
-  }
 }
 
 @media (max-width: 430px) {
   .header {
+    font-size: medium;
+  }
+  .text-content {
     font-size: medium;
   }
 }

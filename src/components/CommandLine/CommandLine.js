@@ -5,7 +5,8 @@ import CropSquareOutlinedIcon from "@mui/icons-material/CropSquareOutlined";
 import KeyboardOutlinedIcon from "@mui/icons-material/KeyboardOutlined";
 import { useEffect, useState } from "react";
 
-const CommandLine = () => {
+const CommandLine = (props) => {
+  const [location, setLocation] = useState("");
   const iconSize = () => {
     if (window.innerWidth < 550) {
       return "medium";
@@ -29,9 +30,8 @@ const CommandLine = () => {
   // typing function for changing folders
   const CurrentLocation = "C:Users\\Joseph\\Desktop\\josephs-portfolio>";
 
-  // big function
   useEffect(() => {
-    const interval = setInterval(() => {
+    const interval = setTimeout(() => {
       setCounting((prev) => prev + 1);
       setTyping((prev) => {
         const array = [...directory.about];
@@ -45,7 +45,7 @@ const CommandLine = () => {
         return [...prev, ...filter];
       });
     }, 350);
-    return () => clearInterval(interval);
+    return () => clearTimeout(interval);
   }, [typing, counter, directory.about]);
 
   return (
