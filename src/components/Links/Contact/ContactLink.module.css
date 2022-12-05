@@ -1,12 +1,11 @@
 .container {
   width: 100%;
-  /* background-color: burlywood; */
-  background-color: azure;
   display: flex;
   justify-content: space-around;
   align-items: center;
   grid-row: 3/4;
   grid-column: 1/2;
+  background-color: rgb(56, 55, 55);
   border-radius: 0 25px 0 0;
   transition: 0.2s;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
@@ -19,6 +18,7 @@
 .container:hover {
   transform: scale(1.02);
   text-decoration: none;
+  background-color: transparent;
 }
 .container:visited {
   text-decoration: none;
@@ -27,25 +27,45 @@
 .container:link {
   text-decoration: none;
 }
-.contact {
-  font-family: "Press Start 2P", cursive;
-}
 
 .contact-container {
   width: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 10px;
 }
+
+.text-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+.click-here {
+  font-family: "Press Start 2P", cursive;
+  font-size: small;
+  color: rgb(56, 55, 55);
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap;
+}
+
 @media (max-width: 550px) {
-  .contact {
+  .text-holder {
     font-size: 100%;
   }
 }
 
 @media (min-width: 551px) {
-  .contact {
+  .text-holder {
     font-size: 120%;
   }
 }

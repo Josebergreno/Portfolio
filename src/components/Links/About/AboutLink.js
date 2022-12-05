@@ -19,6 +19,7 @@ const AboutLink = (props) => {
         <div className={styles["logo-container"]}>
           <img className={styles["logo"]} src={logo} alt={"Logo"} />
         </div>
+        <div className={styles["computer-lines"]}></div>
       </Link>
       {/* <Outlet /> */}
     </>

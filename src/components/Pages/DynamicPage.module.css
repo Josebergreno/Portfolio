@@ -27,7 +27,7 @@
   grid-row: 2/3;
   grid-column: 2/3;
   border: none;
-  background-color: white;
+  background-color: rgb(56, 55, 55);
   border-radius: 25px;
   transition: 0.2s;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,

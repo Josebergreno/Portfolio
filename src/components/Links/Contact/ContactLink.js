@@ -12,8 +12,13 @@ const ContactLink = (props) => {
         className={styles["container"]}
       >
         <div className={styles["contact-container"]}>
-          <div className={styles["contact"]}>Contact</div>
-          <SendIcon />
+          <div className={styles["text-holder"]}>
+            Contact
+            <SendIcon />
+          </div>
+          <div className={styles["click-here"]}>
+            Click here to see Past Projects
+          </div>
         </div>
       </Link>
       <Outlet />
