@@ -2,7 +2,7 @@ import styles from "./Folders.module.css";
 import folderIcon from "../UI/folderIcon.svg";
 
 const Folders = () => {
-  const folderLabels = ["About", "Contact", "Skills", "Past-Projects"];
+  const folderLabels = ["about", "contact", "skills", "past-Projects"];
 
   const content = folderLabels.map((val) => {
     return (

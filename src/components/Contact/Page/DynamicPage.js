@@ -10,17 +10,16 @@ import { useParams } from "react-router-dom";
 
 const DynamicPage = (props) => {
   const { handle } = useParams();
-  console.log(handle);
 
   const header = () => {
-    if (handle === "contact") {
-      return contentHeader[3];
-    } else if (handle === "about") {
+    if (handle === "about") {
       return contentHeader[0];
-    } else if (handle === "past-projects") {
-      return contentHeader[2];
     } else if (handle === "skills") {
       return contentHeader[1];
+    } else if (handle === "past-projects") {
+      return contentHeader[2];
+    } else if (handle === "contact") {
+      return contentHeader[3];
     }
   };
 
@@ -62,7 +61,7 @@ const DynamicPage = (props) => {
   }, [counter]);
 
   return counter < 6 ? (
-    <CmdLineLayout />
+    <CmdLineLayout handle={handle} />
   ) : (
     <div className={styles["layout"]}>
       <div className={styles["about"]}>

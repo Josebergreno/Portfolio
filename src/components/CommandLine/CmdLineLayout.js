@@ -6,7 +6,7 @@ import styles from "./CmdLineLayout.module.css";
 const CmdLineLayout = (props) => {
   return (
     <div className={styles["pages-container"]}>
-      <CommandLine properties={() => console.log("in cmd line layout")} />
+      <CommandLine handle={props.handle} />
       <Folders />
     </div>
   );

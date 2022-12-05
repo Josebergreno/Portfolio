@@ -107,7 +107,7 @@
   font-family: "Press Start 2P", cursive;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 650px) {
   .header {
     font-size: medium;
   }

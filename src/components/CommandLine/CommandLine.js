@@ -6,18 +6,17 @@ import KeyboardOutlinedIcon from "@mui/icons-material/KeyboardOutlined";
 import { useEffect, useState } from "react";
 
 const CommandLine = (props) => {
-  const [location, setLocation] = useState("");
-  const iconSize = () => {
-    if (window.innerWidth < 550) {
-      return "medium";
-    }
-  };
-
   const directory = {
     about: "cd About",
     contact: "cd Contact",
     projects: "cd Past Projects",
     skills: "cd Skills",
+  };
+
+  const iconSize = () => {
+    if (window.innerWidth < 550) {
+      return "medium";
+    }
   };
   const [typing, setTyping] = useState("");
   const [counter, setCounting] = useState(0);
@@ -34,7 +33,7 @@ const CommandLine = (props) => {
     const interval = setTimeout(() => {
       setCounting((prev) => prev + 1);
       setTyping((prev) => {
-        const array = [...directory.about];
+        const array = [...`cd ${props.handle}`];
         const filter = array.filter((val, i) => {
           if (i === counter) {
             array.splice(1);
@@ -46,7 +45,7 @@ const CommandLine = (props) => {
       });
     }, 350);
     return () => clearTimeout(interval);
-  }, [typing, counter, directory.about]);
+  }, [typing, counter, directory.about, props.handle]);
 
   return (
     <>
