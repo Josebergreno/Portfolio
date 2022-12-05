@@ -1,0 +1,114 @@
+.command-line--container {
+  display: grid;
+  width: 75vmin;
+  height: 75vmin;
+  grid-template-rows: repeat(20, 1fr);
+  border: 0.5px rgba(255, 255, 255, 0.57) solid;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.top-bar {
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.542);
+  grid-row: 1/2;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.57);
+  background: rgb(84, 84, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(84, 84, 84, 1) 0%,
+    rgba(156, 155, 155, 1) 67%
+  );
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.title {
+  color: white;
+  padding-left: 5px;
+  /* font-family: "Space Mono", monospace; */
+  font-size: smaller;
+}
+
+.left-grouping {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-grouping {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-line {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  grid-row: 2/3;
+  padding-left: 10px;
+  font-family: "Space Mono", monospace;
+  font-size: smaller;
+  color: white;
+}
+
+.second-line {
+  display: flex;
+  flex-wrap: wrap;
+  grid-row: 3/4;
+  padding-left: 10px;
+  font-family: "Space Mono", monospace;
+  font-size: smaller;
+  color: white;
+}
+
+.code {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  grid-row: 5/6;
+  padding-left: 10px;
+  font-size: small;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+.element {
+  color: blue;
+  margin-left: 5px;
+}
+
+.typing {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1, start);
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+}
+
+.element {
+  color: blue;
+  margin-left: 5px;
+}

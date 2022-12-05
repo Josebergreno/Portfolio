@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./HomePage.module.css";
-import SkillsLink from "../Skills/SkillsLink";
-import ContactLink from "../Contact/Link/ContactLink";
-import PastProjectsLink from "../PastProjects/PastProjectsLink";
-import AboutLink from "../About/AboutLink";
+import SkillsLink from "../Links/Skills/SkillsLink";
+import ContactLink from "../Links/Contact/ContactLink";
+import PastProjectsLink from "../Links/PastProjects/PastProjectsLink";
+import AboutLink from "../Links/About/AboutLink";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 

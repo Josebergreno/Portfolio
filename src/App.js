@@ -1,11 +1,11 @@
 import HomePage from "./components/HomePage/HomePage";
-import AboutPage from "./components/Contact/Page/DynamicPage";
-import PastProjects from "./components/Contact/Page/DynamicPage";
-import SkillsPage from "./components/Contact/Page/DynamicPage";
+import AboutPage from "./components/Pages/DynamicPage";
+import PastProjects from "./components/Pages/DynamicPage";
+import SkillsPage from "./components/Pages/DynamicPage";
 
 import NoMatch from "./components/NoMatch";
 // this one works
-import Contact from "./components/Contact/Page/DynamicPage";
+import Contact from "./components/Pages/DynamicPage";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
