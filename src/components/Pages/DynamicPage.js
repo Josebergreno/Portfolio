@@ -48,7 +48,7 @@ const DynamicPage = (props) => {
     ),
     pastProjects: <>This is the past Projects page</>,
     skills: <>This is the skills page</>,
-    contact: <>This is the contact page</>,
+    contact: <>This is the contact page weiner</>,
   };
 
   const [counter, setCounter] = useState(1);

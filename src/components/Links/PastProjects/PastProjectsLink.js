@@ -13,7 +13,7 @@ const PastProjectsLink = (props) => {
         <div className={styles["past-projects--container"]}>
           <div className={styles["text-holder"]}>
             Past projects
-            <FolderOpenIcon />
+            <FolderOpenIcon sx={{ color: "rgb(60, 170, 60)" }} />
           </div>
           <div className={styles["click-here"]}>
             Click here to see Past Projects

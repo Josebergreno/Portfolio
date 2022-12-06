@@ -4,9 +4,17 @@ import folderIcon from "../../UI/Icons/folderIcon.svg";
 const Folders = () => {
   const folderLabels = ["about", "contact", "skills", "past-Projects"];
 
+  const clickHandler = () => {
+    console.log("hey, i am a folder");
+  };
+
   const content = folderLabels.map((val) => {
     return (
-      <div className={styles["folder"]} key={val}>
+      <div
+        onClick={() => clickHandler()}
+        className={styles["folder"]}
+        key={val}
+      >
         <div className={styles["img-container"]}>
           <img src={folderIcon} alt={val} className={styles["image"]} />
         </div>

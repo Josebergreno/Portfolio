@@ -97,6 +97,17 @@
   width: 15vmin;
   border-radius: 50%;
 }
+
+.logo-container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  justify-content: flex-start;
+  margin: 20px;
+}
 .logo {
   border: rgb(60, 170, 60) solid 0.2px;
   background-color: rgb(60, 170, 60);
@@ -109,17 +120,6 @@
   animation-direction: normal;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-
-.logo-container {
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  margin: 5px;
-  grid-row: 1/2;
-  grid-column: 1/4;
-  justify-content: flex-start;
-  margin: 20px;
 }
 
 @keyframes logo {

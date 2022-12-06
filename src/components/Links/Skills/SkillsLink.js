@@ -12,7 +12,7 @@ const SkillsLink = (props) => {
       >
         <div className={styles["skills-container"]}>
           <div className={styles["text-holder"]}>
-            Skills <CodeIcon />
+            Skills <CodeIcon sx={{ color: "rgb(60, 170, 60)" }} />
           </div>
           <div className={styles["click-here"]}>
             Click here to check out my skills!
@@ -25,15 +25,3 @@ const SkillsLink = (props) => {
 };
 
 export default SkillsLink;
-
-{
-  /* <div className={styles["contact-container"]}>
-<div className={styles["text-holder"]}>
-  Contact
-  <SendIcon />
-</div>
-<div className={styles["click-here"]}>
-  Click here to see Past Projects
-</div>
-</div> */
-}
