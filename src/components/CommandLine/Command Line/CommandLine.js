@@ -34,6 +34,7 @@ const CommandLine = (props) => {
       setCounting((prev) => prev + 1);
       setTyping((prev) => {
         const array = [...`cd ${props.handle}`];
+        // eslint-disable-next-line
         const filter = array.filter((val, i) => {
           if (i === counter) {
             array.splice(1);

@@ -1,7 +1,7 @@
 import styles from "./AboutLink.module.css";
 import logo from "../../UI/Icons/logo-cropped.svg";
 import avatar from "../../UI/Icons/avatar.svg";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AboutLink = (props) => {
   return (
