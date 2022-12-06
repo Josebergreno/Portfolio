@@ -99,10 +99,11 @@
   margin: 10px;
 }
 
+/* This will affect all pages */
 .text-content {
-  margin: 10px;
   height: 90%;
-  display: grid;
+  margin: 10px;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   font-size: large;
@@ -121,28 +122,97 @@
 
 /* skills page */
 
-/* .skills-layout {
+.skills-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  width: 100%;
+}
 
 .svg-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 600px;
+  width: 100%;
 }
+
+/* individual icons within grid layout */
 
 .react-icon {
   width: 10vmin;
+}
+.react-container {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .js-icon {
   width: 10vmin;
 }
+.js-container {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .css-icon {
+  width: 7.5vmin;
+}
+.css-container {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.html-icon {
   width: 10vmin;
+}
+.html-container {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-icon {
+  width: 10vmin;
+}
+.github-container {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.git-icon {
+  width: 10vmin;
+}
+.git-container {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mui-icon {
+  width: 10vmin;
+}
+.mui-container {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

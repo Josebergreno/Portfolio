@@ -1,7 +1,7 @@
 import styles from "./DynamicPage.module.css";
 import logo from "../UI/Icons/logo-cropped.svg";
 import avatar from "../UI/Icons/avatar.svg";
-import { Divider } from "@mui/material";
+import { Divider, Icon } from "@mui/material";
 import BreadCrumbs from "../Breadcrumbs/BreadCrumbs";
 import { useEffect, useState } from "react";
 import CmdLineLayout from "../CommandLine/Layout/CmdLineLayout";
@@ -9,8 +9,7 @@ import { useParams } from "react-router-dom";
 
 import ContactPage from "./PageComponents/Contact Page/ContactPage";
 import AboutPage from "./PageComponents/About Page/AboutPage";
-
-import GitHubIcon from "@mui/icons-material/GitHub";
+import muiLogo from "../UI/Icons/material-ui.svg";
 
 const DynamicPage = (props) => {
   const { handle } = useParams();
@@ -46,18 +45,45 @@ const DynamicPage = (props) => {
     skills: (
       <div className={styles["skills-layout"]}>
         <div className={styles["svg-container"]}>
-          <img
-            className={styles["react-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-          />
-          <img
-            className={styles["js-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-          />
-          <img
-            className={styles["css-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-          />
+          <div className={styles["react-container"]}>
+            <img
+              className={styles["react-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            />
+          </div>
+          <div className={styles["js-container"]}>
+            <img
+              className={styles["js-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+            />
+          </div>
+          <div className={styles["css-container"]}>
+            <img
+              className={styles["css-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            />
+          </div>
+          <div className={styles["html-container"]}>
+            <img
+              className={styles["html-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            />
+          </div>
+          <div className={styles["github-container"]}>
+            <img
+              className={styles["github-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            />
+          </div>
+          <div className={styles["git-container"]}>
+            <img
+              className={styles["git-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+            />
+          </div>
+          <div className={styles["mui-container"]}>
+            <img className={styles["mui-icon"]} src={muiLogo} />
+          </div>
         </div>
       </div>
     ),
