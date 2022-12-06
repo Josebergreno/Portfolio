@@ -16,9 +16,7 @@ const ContactLink = (props) => {
             Contact
             <SendIcon sx={{ color: "rgb(60, 170, 60)" }} />
           </div>
-          <div className={styles["click-here"]}>
-            Click here to see Past Projects
-          </div>
+          <div className={styles["click-here"]}>Click here to contact me</div>
         </div>
       </Link>
       <Outlet />

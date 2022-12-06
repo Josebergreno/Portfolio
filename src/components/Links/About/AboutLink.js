@@ -17,7 +17,7 @@ const AboutLink = (props) => {
 
         <div className={styles["click-here--container"]}>
           <div className={styles["click-here"]}>
-            Click here to learn a little about me :)
+            Click here to learn a little about me:)
           </div>
         </div>
         <div className={styles["avatar-container"]}>
