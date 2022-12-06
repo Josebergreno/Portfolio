@@ -1,19 +1,17 @@
 import React from "react";
 import styles from "./ContactPage.module.css";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
 
 const ContactPage = () => {
   const emailClickHandler = () => {
-    const link =
-      "mailto:bergren.bergren@yahoo.com" +
-      "&subject=" +
-      encodeURIComponent(
-        document.getElementsByClassName("This is my subject")
-      ) +
-      "&body=" +
-      encodeURIComponent(document.getElementById("myText").value);
+    console.log("link");
+    // const link =
+    // "mailto:bergren.bergren@yahoo.com" +
+    // "&subject=" +
+    // encodeURIComponent(
+    //   document.getElementsByClassName("This is my subject")
+    // ) +
+    // "&body=" +
+    // encodeURIComponent(document.getElementById("myText").value);
   };
   return (
     <>
