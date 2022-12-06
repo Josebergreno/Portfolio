@@ -1,0 +1,58 @@
+.contact-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  grid-row: 2/3;
+}
+
+.email-href {
+  color: rgb(60, 170, 60);
+}
+
+.form-button {
+  max-width: 100px;
+  width: 100%;
+  background-color: rgb(60, 170, 60);
+  font-family: "Press Start 2P", cursive;
+  border-color: rgb(56, 55, 55);
+}
+
+.body-input {
+  max-width: 500px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Press Start 2P", cursive;
+  line-height: 150%;
+  padding: 5px;
+}
+.body-input:focus {
+  border-color: rgb(60, 170, 60);
+  border: solid rgb(60, 170, 60) 3px;
+}
+
+.input-fields {
+  max-width: 500px;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  font-family: "Press Start 2P", cursive;
+  border: solid rgb(118, 118, 118) 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.input-fields:focus {
+  border-color: rgb(60, 170, 60);
+  border: solid rgb(60, 170, 60) 3px;
+}
