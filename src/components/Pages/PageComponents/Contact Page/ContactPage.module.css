@@ -25,7 +25,8 @@
   border-color: rgb(56, 55, 55);
 }
 
-.body-input {
+.body-input--valid {
+  color: rgb(118, 118, 118);
   max-width: 500px;
   width: 100%;
   resize: none;
@@ -36,12 +37,27 @@
   line-height: 150%;
   padding: 5px;
 }
-.body-input:focus {
+.body-input--invalid {
+  color: rgb(118, 118, 118);
+  max-width: 500px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "Press Start 2P", cursive;
+  line-height: 150%;
+  padding: 5px;
+  border: solid red 3px;
+}
+
+.body-input--valid:focus {
   border-color: rgb(60, 170, 60);
   border: solid rgb(60, 170, 60) 3px;
 }
 
-.input-fields {
+.input-fields--valid {
+  color: rgb(118, 118, 118);
   max-width: 500px;
   width: 100%;
   outline: none;
@@ -52,7 +68,42 @@
   padding: 5px;
 }
 
-.input-fields:focus {
+.input-fields--valid:focus {
   border-color: rgb(60, 170, 60);
   border: solid rgb(60, 170, 60) 3px;
+}
+.input-fields--invalid {
+  color: rgb(118, 118, 118);
+  max-width: 500px;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  font-family: "Press Start 2P", cursive;
+  border: solid red 3px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.visible-label {
+  color: red;
+  font-size: small;
+}
+
+.hidden-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: small;
+  margin: 0;
 }
