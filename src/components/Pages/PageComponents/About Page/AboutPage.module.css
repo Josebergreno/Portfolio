@@ -1,0 +1,13 @@
+.about {
+  color: black;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  .about {
+    font-size: small;
+  }
+}

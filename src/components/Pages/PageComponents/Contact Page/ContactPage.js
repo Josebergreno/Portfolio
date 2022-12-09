@@ -16,24 +16,33 @@ const ContactPage = () => {
           or by the following social media platforms:
         </div>
         <div className={styles["link-container"]}>
-          <a href="https://www.linkedin.com/in/joseph-bergren-300148a8">
+          <a
+            className={styles["indiv-icon--container"]}
+            href="https://www.linkedin.com/in/joseph-bergren-300148a8"
+          >
             <img
               alt="linkedin-icon"
-              className={styles["linkedin-icon"]}
+              className={styles["icon"]}
               src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
             />
           </a>
-          <a href="https://www.instagram.com/josebergreno">
+          <a
+            className={styles["indiv-icon--container"]}
+            href="https://www.instagram.com/josebergreno"
+          >
             <img
               alt="instagram-icon"
-              className={styles["instagram-icon"]}
+              className={styles["icon"]}
               src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
             />
           </a>
-          <a href="https://github.com/Josebergreno">
+          <a
+            className={styles["indiv-icon--container"]}
+            href="https://github.com/Josebergreno"
+          >
             <img
               alt={"github-icon"}
-              className={styles["github-icon"]}
+              className={styles["icon"]}
               src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
             />
           </a>
