@@ -1,79 +1,7 @@
 import React from "react";
 import styles from "./ContactPage.module.css";
-import { useState } from "react";
 
 const ContactPage = () => {
-  // email validation
-  // eslint-disable-next-line
-  const [enteredEmail, setEnteredEmail] = useState("");
-  const [emailValid, setEmailValid] = useState(false);
-  const [emailWasTouched, setEmailWasTouched] = useState(false);
-  // subject validation
-  // eslint-disable-next-line
-  const [enteredSubject, setEnteredSubject] = useState("");
-  const [subjectValid, setSubjectValid] = useState(false);
-  const [subjectWasTouched, setSubjectWasTouched] = useState(false);
-  // // body validation
-  // eslint-disable-next-line
-  const [enteredBody, setEnteredBody] = useState("");
-  const [bodyValid, setBodyValid] = useState(false);
-  const [bodyWasTouched, setBodyWasTouched] = useState(false);
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const emailInputIsInvalid = !emailValid && emailWasTouched;
-
-  const emailInputClasses = emailInputIsInvalid
-    ? `${styles["input-fields--invalid"]}`
-    : `${styles["input-fields--valid"]}`;
-
-  const emailHandler = (e) => {
-    setEnteredEmail(e.target.value);
-    if (e.target.value.trim() !== "" && e.target.value.includes("@")) {
-      setEmailValid(true);
-      setEmailWasTouched(true);
-    } else setEmailValid(false);
-    setEmailWasTouched(true);
-  };
-
-  const subjectInputIsInvalid = !subjectValid && subjectWasTouched;
-
-  const subjectInputClasses = subjectInputIsInvalid
-    ? `${styles["input-fields--invalid"]}`
-    : `${styles["input-fields--valid"]}`;
-
-  const subjectHandler = (e) => {
-    setEnteredSubject(e.target.value);
-    if (e.target.value.trim() !== "") {
-      setSubjectValid(true);
-      setSubjectWasTouched(true);
-    } else setSubjectValid(false);
-    setSubjectWasTouched(true);
-  };
-
-  const bodyInputIsInvalid = !bodyValid && bodyWasTouched;
-
-  const bodyInputClasses = bodyInputIsInvalid
-    ? `${styles["body-input--invalid"]}`
-    : `${styles["body-input--valid"]}`;
-
-  const bodyHandler = (e) => {
-    setEnteredBody(e.target.value);
-    if (e.target.value.trim() !== "") {
-      setBodyValid(true);
-      setBodyWasTouched(true);
-    } else setBodyValid(false);
-    setBodyWasTouched(true);
-  };
-  const formHandler = (e) => {
-    if (!subjectValid || !emailValid || !bodyValid) {
-      e.preventDefault();
-    } else e.preventDefault();
-    setEnteredBody("");
-    setFormSubmitted(true);
-    console.log(formSubmitted);
-  };
-
   return (
     <>
       <div className={styles["contact-layout"]}>
@@ -85,72 +13,32 @@ const ContactPage = () => {
           >
             here
           </a>{" "}
-          or by filling out the form below.
+          or by the following social media platforms:
         </div>
-        {emailInputIsInvalid && (
-          <p className={styles["warning"]}>Email must be valid</p>
-        )}
-        {subjectInputIsInvalid && (
-          <p className={styles["warning"]}>Please enter a subject</p>
-        )}
-        {bodyInputIsInvalid && (
-          <p className={styles["warning"]}>Please don't leave body empty</p>
-        )}
-        <form className={styles["form-container"]}>
-          <label className={styles["hidden-label"]} htmlFor="Email">
-            Email
-          </label>
-          <input
-            onBlur={emailHandler}
-            onKeyDown={emailInputIsInvalid ? emailHandler : undefined}
-            type="email"
-            id="Email"
-            className={emailInputClasses}
-            placeholder={"Your e-mail"}
+        <div className={styles["link-container"]}>
+          <img
+            alt="linkedin-icon"
+            className={styles["linkedin-icon"]}
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
           />
-          <label className={styles["hidden-label"]} htmlFor="Subject"></label>
-
-          <input
-            onBlur={subjectHandler}
-            onKeyDown={subjectInputIsInvalid ? subjectHandler : undefined}
-            type="text"
-            id="Subject"
-            className={subjectInputClasses}
-            placeholder="Subject"
-          />
-          <label className={styles["hidden-label"]} htmlFor="Body">
-            Body
-          </label>
-          <textarea
-            onBlur={bodyHandler}
-            onKeyDown={bodyInputIsInvalid ? bodyHandler : undefined}
-            id="Body"
-            className={bodyInputClasses}
-            placeholder="Please write any questions here, and I'll get back to you as soon as I can!"
-            rows={6}
-          ></textarea>
-          <button
-            type="submit"
-            className={styles["form-button"]}
-            size="small"
-            variant="outlined"
-            onClick={formHandler}
-          >
-            Send
-          </button>
-        </form>
+          <a href="https://www.instagram.com/josebergreno">
+            <img
+              alt="instagram-icon"
+              className={styles["instagram-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+            />
+          </a>
+          <a href="https://github.com/Josebergreno">
+            <img
+              alt={"github-icon"}
+              className={styles["github-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            />
+          </a>
+        </div>
       </div>
     </>
   );
 };
 
 export default ContactPage;
-
-// const link =
-// "mailto:bergren.bergren@yahoo.com" +
-// "&subject=" +
-// encodeURIComponent(
-//   document.getElementsByClassName("This is my subject")
-// ) +
-// "&body=" +
-// encodeURIComponent(document.getElementById("myText").value);
