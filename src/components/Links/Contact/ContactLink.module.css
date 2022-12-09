@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,6 +27,7 @@
 }
 .container:link {
   text-decoration: none;
+  color: black;
 }
 
 .contact-container {

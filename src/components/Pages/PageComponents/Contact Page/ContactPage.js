@@ -16,7 +16,7 @@ const ContactPage = () => {
           or by the following social media platforms:
         </div>
         <div className={styles["link-container"]}>
-          <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BcCnT6HKfS9qOo3uraWQrdw%3D%3D">
+          <a href="https://www.linkedin.com/in/joseph-bergren-300148a8">
             <img
               alt="linkedin-icon"
               className={styles["linkedin-icon"]}
