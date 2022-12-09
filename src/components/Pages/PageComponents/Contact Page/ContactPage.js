@@ -16,11 +16,13 @@ const ContactPage = () => {
           or by the following social media platforms:
         </div>
         <div className={styles["link-container"]}>
-          <img
-            alt="linkedin-icon"
-            className={styles["linkedin-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
-          />
+          <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BcCnT6HKfS9qOo3uraWQrdw%3D%3D">
+            <img
+              alt="linkedin-icon"
+              className={styles["linkedin-icon"]}
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
+            />
+          </a>
           <a href="https://www.instagram.com/josebergreno">
             <img
               alt="instagram-icon"
