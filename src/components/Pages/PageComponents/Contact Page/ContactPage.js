@@ -4,14 +4,17 @@ import { useState } from "react";
 
 const ContactPage = () => {
   // email validation
+  // eslint-disable-next-line
   const [enteredEmail, setEnteredEmail] = useState("");
   const [emailValid, setEmailValid] = useState(false);
   const [emailWasTouched, setEmailWasTouched] = useState(false);
   // subject validation
+  // eslint-disable-next-line
   const [enteredSubject, setEnteredSubject] = useState("");
   const [subjectValid, setSubjectValid] = useState(false);
   const [subjectWasTouched, setSubjectWasTouched] = useState(false);
   // // body validation
+  // eslint-disable-next-line
   const [enteredBody, setEnteredBody] = useState("");
   const [bodyValid, setBodyValid] = useState(false);
   const [bodyWasTouched, setBodyWasTouched] = useState(false);
