@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./PastProjectsPage.module.css";
-import snakeGameThumbnail from "./snake-game-thumbnail.png";
+import snakeGameThumbnail from "../../UI/Icons/newSnakeGameThumbnail.jpg";
 
 const PastProjectsPage = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import muiLogo from "../../../components/UI/Icons/material-ui.svg";
 import styles from "./SkillsPage.module.css";
+import responsiveIcon from "../../UI/Icons/responsive.svg";
 
 const SkillsPage = () => {
   return (
@@ -12,7 +13,7 @@ const SkillsPage = () => {
             className={styles["icon"]}
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           />
-          <span className={styles["under-title"]}>React Library</span>
+          <span className={styles["under-title"]}>React</span>
         </div>
 
         <div className={styles["indiv-icon--container"]}>
@@ -57,11 +58,7 @@ const SkillsPage = () => {
       </div>
       <div className={styles["row-container"]}>
         <div className={styles["indiv-icon--container"]}>
-          <img
-            alt={"responsive-icon"}
-            className={styles["responsive-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/4/48/Noun_Project_Responsive_Design_icon_1849455.svg"
-          />
+          <img className={styles["icon"]} src={responsiveIcon} />
           <span className={styles["under-title"]}>Responsive Design</span>
         </div>
         <div className={styles["indiv-icon--container"]}>
@@ -75,7 +72,7 @@ const SkillsPage = () => {
         <div className={styles["indiv-icon--container"]}>
           <img
             alt={"github-icon"}
-            className={styles["icon"]}
+            className={styles["github-icon"]}
             src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
           />
           <span className={styles["under-title"]}>Github</span>

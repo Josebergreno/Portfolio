@@ -22,19 +22,21 @@
   transform: scale(1.05);
 }
 .icon {
-  width: 10vmin;
-}
-.responsive-icon {
-  width: 10vmin;
-  filter: invert(80%);
+  width: 9vmin;
+  margin: 10px;
 }
 
 .git-icon {
   width: 10vmin;
   background-color: white;
-  padding: 3px;
+  padding: 5px;
   border: solid black 1px;
   border-radius: 3px;
+}
+.github-icon {
+  width: 9vmin;
+  margin: 10px;
+  filter: invert(100%);
 }
 
 .row-container {
@@ -68,6 +70,6 @@
 }
 @media (max-width: 400px) {
   .under-title {
-    font-size: 50%;
+    font-size: 40%;
   }
 }

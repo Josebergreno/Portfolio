@@ -1,13 +1,28 @@
 .about {
-  color: black;
+  color: gray;
   display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 2;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .about {
-    font-size: small;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    line-height: 1.6;
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    line-height: 1.5;
+    font-size: 90%;
   }
 }

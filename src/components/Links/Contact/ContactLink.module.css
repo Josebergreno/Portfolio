@@ -16,17 +16,18 @@
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.container:visited {
+  text-decoration: none;
+  color: rgb(60, 170, 60);
+}
+.container:link {
+  text-decoration: none;
+  color: rgb(60, 170, 60);
+}
 .container:hover {
   transform: scale(1.02);
   text-decoration: none;
   background-color: transparent;
-}
-.container:visited {
-  text-decoration: none;
-  color: black;
-}
-.container:link {
-  text-decoration: none;
   color: black;
 }
 

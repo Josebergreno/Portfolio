@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <>
       <div className={styles["contact-layout"]}>
-        <div>
+        <div className={styles["how-to--contact"]}>
           I can be contacted via e-mail by clicking{" "}
           <a
             className={styles["email-href"]}
@@ -43,7 +43,7 @@ const ContactPage = () => {
             >
               <img
                 alt={"github-icon"}
-                className={styles["icon"]}
+                className={styles["github-icon"]}
                 src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
               />
             </a>
