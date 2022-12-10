@@ -12,7 +12,7 @@
   justify-content: space-around;
   align-items: center;
   width: 30%;
-  height: 20vmin;
+  height: 90%;
   border-radius: 20%;
   border: solid rgb(60, 170, 60) 2px;
   flex-direction: column;
@@ -53,4 +53,21 @@
   line-height: 1.2;
   margin: 0;
   color: rgb(60, 170, 60);
+}
+
+@media (max-width: 450px) {
+  .icon {
+    width: 15vmin;
+  }
+  .responsive-icon {
+    width: 15vmin;
+  }
+  .under-title {
+    font-size: xx-small;
+  }
+}
+@media (max-width: 400px) {
+  .under-title {
+    font-size: 50%;
+  }
 }
