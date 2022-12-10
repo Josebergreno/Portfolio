@@ -6,13 +6,6 @@ import KeyboardOutlinedIcon from "@mui/icons-material/KeyboardOutlined";
 import { useEffect, useState } from "react";
 
 const CommandLine = (props) => {
-  const directory = {
-    about: "cd About",
-    contact: "cd Contact",
-    projects: "cd Past Projects",
-    skills: "cd Skills",
-  };
-
   const iconSize = () => {
     if (window.innerWidth < 550) {
       return "medium";
@@ -26,7 +19,7 @@ const CommandLine = (props) => {
   const firstLineUpdate = () => {
     return `Prompt System [Latest update ${today}]`;
   };
-  // typing function for changing folders
+
   const CurrentLocation = "C:Users\\Joseph\\Desktop\\josephs-portfolio>";
 
   useEffect(() => {
@@ -41,7 +34,7 @@ const CommandLine = (props) => {
       });
     }, 350);
     return () => clearTimeout(interval);
-  }, [typing, counter, directory.about, props.handle]);
+  }, [typing, counter, props.handle]);
 
   return (
     <>

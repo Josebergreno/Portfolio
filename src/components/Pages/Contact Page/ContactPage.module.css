@@ -34,7 +34,7 @@
 
 .icon {
   width: 10vmin;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .icon:hover {
   transform: scale(1.2);

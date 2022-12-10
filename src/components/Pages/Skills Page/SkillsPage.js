@@ -4,52 +4,81 @@ import styles from "./SkillsPage.module.css";
 
 const SkillsPage = () => {
   return (
-    <div className={styles["skills-layout"]}>
-      <div className={styles["svg-container"]}>
-        <div className={styles["react-container"]}>
+    <div className={styles["svg-main--container"]}>
+      <div className={styles["row-container"]}>
+        <div className={styles["indiv-icon--container"]}>
           <img
             alt={"react-icon"}
-            className={styles["react-icon"]}
+            className={styles["icon"]}
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           />
+          <span className={styles["under-title"]}>React Library</span>
         </div>
-        <div className={styles["js-container"]}>
+
+        <div className={styles["indiv-icon--container"]}>
+          <img alt={"mui-icon"} className={styles["icon"]} src={muiLogo} />
+          <span className={styles["under-title"]}>Material-UI</span>
+        </div>
+
+        <div className={styles["indiv-icon--container"]}>
           <img
-            alt={"js-icon"}
-            className={styles["js-icon"]}
+            alt={"typescript-icon"}
+            className={styles["icon"]}
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+          />
+          <span className={styles["under-title"]}>Typescript</span>
+        </div>
+      </div>
+      <div className={styles["row-container"]}>
+        <div className={styles["indiv-icon--container"]}>
+          <img
+            alt={"javascript-icon"}
+            className={styles["icon"]}
             src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
           />
+          <span className={styles["under-title"]}>Javascript</span>
         </div>
-        <div className={styles["css-container"]}>
+        <div className={styles["indiv-icon--container"]}>
           <img
             alt={"css-icon"}
-            className={styles["css-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            className={styles["icon"]}
+            src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
           />
+          <span className={styles["under-title"]}>CSS</span>
         </div>
-        <div className={styles["html-container"]}>
+        <div className={styles["indiv-icon--container"]}>
           <img
             alt={"html-icon"}
-            className={styles["html-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            className={styles["icon"]}
+            src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg"
           />
+          <span className={styles["under-title"]}>HTML</span>
         </div>
-        <div className={styles["github-container"]}>
+      </div>
+      <div className={styles["row-container"]}>
+        <div className={styles["indiv-icon--container"]}>
           <img
-            alt={"github-icon"}
-            className={styles["github-icon"]}
-            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            alt={"responsive-icon"}
+            className={styles["responsive-icon"]}
+            src="https://upload.wikimedia.org/wikipedia/commons/4/48/Noun_Project_Responsive_Design_icon_1849455.svg"
           />
+          <span className={styles["under-title"]}>Responsive Design</span>
         </div>
-        <div className={styles["git-container"]}>
+        <div className={styles["indiv-icon--container"]}>
           <img
             alt={"git-icon"}
             className={styles["git-icon"]}
             src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
           />
+          <span className={styles["under-title"]}>git</span>
         </div>
-        <div className={styles["mui-container"]}>
-          <img alt={"mui-icon"} className={styles["mui-icon"]} src={muiLogo} />
+        <div className={styles["indiv-icon--container"]}>
+          <img
+            alt={"github-icon"}
+            className={styles["icon"]}
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+          />
+          <span className={styles["under-title"]}>Github</span>
         </div>
       </div>
     </div>

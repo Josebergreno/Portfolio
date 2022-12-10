@@ -37,7 +37,6 @@
 .title {
   color: white;
   padding-left: 5px;
-  /* font-family: "Space Mono", monospace; */
   font-size: smaller;
 }
 
@@ -87,7 +86,7 @@
   color: white;
 }
 .element {
-  color: blue;
+  color: white;
   margin-left: 5px;
 }
 
@@ -106,9 +105,4 @@
   50% {
     color: black;
   }
-}
-
-.element {
-  color: blue;
-  margin-left: 5px;
 }
