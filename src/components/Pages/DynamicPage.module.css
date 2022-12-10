@@ -5,7 +5,7 @@
   background-color: green;
   display: grid;
   grid-template-columns: 10fr 80fr 10fr;
-  grid-template-rows: 10fr 80fr 10fr;
+  grid-template-rows: 20fr 60fr 20fr;
   animation-name: mainContent;
   animation-duration: 0.5s;
   animation-direction: normal;

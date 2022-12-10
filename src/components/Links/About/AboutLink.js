@@ -27,7 +27,6 @@ const AboutLink = (props) => {
           <img className={styles["logo"]} src={logo} alt={"Logo"} />
         </div>
       </Link>
-      {/* <Outlet /> */}
     </>
   );
 };

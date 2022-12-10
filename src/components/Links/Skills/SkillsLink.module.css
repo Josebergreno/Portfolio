@@ -49,6 +49,8 @@
 .click-here {
   font-family: "Press Start 2P", cursive;
   font-size: small;
+  position: relative;
+  z-index: -1;
   color: rgb(56, 55, 55);
   width: 100%;
   margin-top: 10px;

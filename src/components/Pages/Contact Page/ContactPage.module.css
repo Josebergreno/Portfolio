@@ -19,9 +19,16 @@
 
 .link-container {
   width: 100%;
+  max-width: 600px;
   display: flex;
   height: 90%;
   justify-content: space-around;
+  align-items: center;
+}
+.link-container--parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -38,4 +45,10 @@
 }
 .icon:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 500px) {
+  .icon {
+    width: 15vmin;
+  }
 }
