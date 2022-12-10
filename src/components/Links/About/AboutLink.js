@@ -4,6 +4,7 @@ import avatar from "../../UI/Icons/avatar.svg";
 import { Link } from "react-router-dom";
 
 const AboutLink = (props) => {
+  console.log(window.innerWidth / 6);
   return (
     <>
       <Link to="/about" onClick={props.onClick} className={styles["container"]}>
