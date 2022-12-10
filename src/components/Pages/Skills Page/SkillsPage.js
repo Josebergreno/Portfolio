@@ -58,7 +58,11 @@ const SkillsPage = () => {
       </div>
       <div className={styles["row-container"]}>
         <div className={styles["indiv-icon--container"]}>
-          <img className={styles["icon"]} src={responsiveIcon} />
+          <img
+            alt={"responsive-icon"}
+            className={styles["icon"]}
+            src={responsiveIcon}
+          />
           <span className={styles["under-title"]}>Responsive Design</span>
         </div>
         <div className={styles["indiv-icon--container"]}>
