@@ -34,15 +34,10 @@ const CommandLine = (props) => {
       setCounting((prev) => prev + 1);
       setTyping((prev) => {
         const array = [...`cd ${props.handle}`];
-        // eslint-disable-next-line
-        const filter = array.filter((val, i) => {
-          if (i === counter) {
-            array.splice(1);
-            return val;
-          }
-        });
 
-        return [...prev, ...filter];
+        const value = array.find((val, i) => i === counter && val);
+
+        return value !== undefined ? [...prev, ...value] : typing;
       });
     }, 350);
     return () => clearTimeout(interval);

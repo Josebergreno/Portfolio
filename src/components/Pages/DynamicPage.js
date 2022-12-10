@@ -1,6 +1,6 @@
 import styles from "./DynamicPage.module.css";
 import { Divider } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import logo from "../UI/Icons/logo-cropped.svg";
 import avatar from "../UI/Icons/avatar.svg";
@@ -38,11 +38,11 @@ const DynamicPage = (props) => {
     }
   };
 
-  const cmdTiming = () => {
+  const cmdTiming = useCallback(() => {
     if (handle === "past-projects") {
       return 8;
     } else return 6;
-  };
+  }, [handle]);
 
   const contentHeader = ["About Me", "Skills", "Past Projects", "Contact"];
   const contentBody = {
