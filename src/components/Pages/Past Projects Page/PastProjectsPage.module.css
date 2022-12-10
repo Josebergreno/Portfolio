@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(60, 170, 60);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid rgb(60, 170, 60) 1px;
+  border-radius: 5px;
+}
+
+.snake-game--thumbnail {
+  width: 25vmin;
+  margin-bottom: 20px;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+.button {
+  min-width: 10vmin;
+  width: 20vmin;
+  height: 5vmin;
+  margin: 10px;
+  background-color: rgb(60, 170, 60);
+  border: solid black 1px;
+  font-family: "Press Start 2p", cursive;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .button {
+    font-size: x-small;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import muiLogo from "../../../UI/Icons/material-ui.svg";
+import muiLogo from "../../../components/UI/Icons/material-ui.svg";
 import styles from "./SkillsPage.module.css";
 
 const SkillsPage = () => {

@@ -6,10 +6,10 @@ import logo from "../UI/Icons/logo-cropped.svg";
 import avatar from "../UI/Icons/avatar.svg";
 import BreadCrumbs from "../Breadcrumbs/BreadCrumbs";
 import CmdLineLayout from "../CommandLine/Layout/CmdLineLayout";
-import ContactPage from "./PageComponents/Contact Page/ContactPage";
-import AboutPage from "./PageComponents/About Page/AboutPage";
-import SkillsPage from "./PageComponents/Skills Page/SkillsPage";
-import PastProjectsPage from "./PageComponents/Past Projects Page/PastProjectsPage";
+import ContactPage from "./Contact Page/ContactPage";
+import AboutPage from "./About Page/AboutPage";
+import SkillsPage from "./Skills Page/SkillsPage";
+import PastProjectsPage from "./Past Projects Page/PastProjectsPage";
 
 const DynamicPage = (props) => {
   const { handle } = useParams();
