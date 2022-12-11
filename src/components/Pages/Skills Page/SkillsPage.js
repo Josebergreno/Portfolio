@@ -2,12 +2,27 @@ import React from "react";
 import muiLogo from "../../../components/UI/Icons/material-ui.svg";
 import styles from "./SkillsPage.module.css";
 import responsiveIcon from "../../UI/Icons/responsive.svg";
-
+import { useRef } from "react";
 const SkillsPage = () => {
+  const ref = useRef("");
+  const clickHandler = (e) => {
+    e.target.focus();
+
+    ref.current =
+      e.target.localName === "DIV"
+        ? e.target.lastChild.textContent
+        : e.target.parentElement.lastChild.textContent;
+    console.log(ref.current);
+  };
   return (
     <div className={styles["svg-main--container"]}>
       <div className={styles["row-container"]}>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"react-icon"}
             className={styles["icon"]}
@@ -16,12 +31,21 @@ const SkillsPage = () => {
           <span className={styles["under-title"]}>React</span>
         </div>
 
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img alt={"mui-icon"} className={styles["icon"]} src={muiLogo} />
           <span className={styles["under-title"]}>Material-UI</span>
         </div>
 
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"typescript-icon"}
             className={styles["icon"]}
@@ -31,7 +55,12 @@ const SkillsPage = () => {
         </div>
       </div>
       <div className={styles["row-container"]}>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"javascript-icon"}
             className={styles["icon"]}
@@ -39,7 +68,12 @@ const SkillsPage = () => {
           />
           <span className={styles["under-title"]}>Javascript</span>
         </div>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"css-icon"}
             className={styles["icon"]}
@@ -47,7 +81,12 @@ const SkillsPage = () => {
           />
           <span className={styles["under-title"]}>CSS</span>
         </div>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"html-icon"}
             className={styles["icon"]}
@@ -57,7 +96,12 @@ const SkillsPage = () => {
         </div>
       </div>
       <div className={styles["row-container"]}>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"responsive-icon"}
             className={styles["icon"]}
@@ -65,7 +109,12 @@ const SkillsPage = () => {
           />
           <span className={styles["under-title"]}>Responsive Design</span>
         </div>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"git-icon"}
             className={styles["git-icon"]}
@@ -73,7 +122,12 @@ const SkillsPage = () => {
           />
           <span className={styles["under-title"]}>git</span>
         </div>
-        <div className={styles["indiv-icon--container"]}>
+        <div
+          tabIndex={0}
+          ref={ref}
+          onClick={clickHandler}
+          className={styles["indiv-icon--container"]}
+        >
           <img
             alt={"github-icon"}
             className={styles["github-icon"]}

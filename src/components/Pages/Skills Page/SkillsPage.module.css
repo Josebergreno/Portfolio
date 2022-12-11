@@ -18,8 +18,13 @@
   flex-direction: column;
   transition: 0.2s;
 }
+
 .indiv-icon--container:hover {
   transform: scale(1.05);
+}
+.indiv-icon--container:focus {
+  transform: scale(1.05);
+  background-color: blue;
 }
 .icon {
   width: 9vmin;
