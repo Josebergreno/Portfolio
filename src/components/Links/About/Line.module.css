@@ -1,31 +1,34 @@
-.line-item {
+.line {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
-    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  margin: 0;
+  height: 1px;
+  border: solid #ffffff 0.5px;
+  background-color: #49ff18;
+  grid-column: 1/4;
+  grid-row: 1/4;
+  box-shadow: 1px 0px 28px 4px #49ff18;
+  -webkit-box-shadow: 1px 0px 20px 2px #49ff18;
+  -moz-box-shadow: 1px 0px 20px 4px #49ff18;
   animation-name: line;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  padding: 0;
-  margin: 0;
-  height: 50px;
 }
 @keyframes line {
   0% {
-    transform: translate(0, -3000%);
+    opacity: 25%;
   }
-  100% {
-    color: #49ff18;
-    opacity: 50%;
+  /* 25% {
+    opacity: 25%;
+  } */
+  50% {
+    opacity: 75%;
   }
-}
 
-.line {
-  display: flex;
-  justify-content: center;
-  border-bottom-right-radius: 25px;
-  grid-column: 1/4;
+  100% {
+    opacity: 0%;
+    transform: translate(0, 18000%);
+  }
 }
