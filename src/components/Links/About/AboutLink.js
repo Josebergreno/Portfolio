@@ -12,7 +12,8 @@ const AboutLink = (props) => {
           <h1 className={styles["h1"]}>
             <span className={styles["hi"]}>Hi, I'm</span>
             <span className={styles["joe"]}> Joe.</span>
-            <span className={styles["web-dev"]}>Web developer</span>
+            <span className={styles["web"]}>Web</span>
+            <div className={styles["dev"]}>Developer.</div>
           </h1>
         </div>
 

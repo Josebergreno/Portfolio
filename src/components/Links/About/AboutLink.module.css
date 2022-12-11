@@ -36,39 +36,19 @@
   justify-content: center;
 }
 .h1 {
+  z-index: 1;
   margin: 0;
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: black;
-}
-.hi {
-  font-family: "Press Start 2P", cursive;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
   line-height: 150%;
   color: rgb(60, 170, 60);
-}
-.joe {
-  color: rgb(60, 170, 60);
-  font-size: 150%;
-  width: 100%;
   font-family: "Press Start 2P", cursive;
 }
 
-.web-dev {
-  margin: 0;
-  font-family: "Press Start 2P", cursive;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  line-height: 150%;
-  width: 100%;
-  color: rgb(60, 170, 60);
+.joe {
+  font-size: 150%;
 }
 
 .click-here--container {
@@ -92,7 +72,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-direction: column;
   grid-row: 1/2;
   grid-column: 1/4;
   margin: 20px;
@@ -106,19 +85,16 @@
 .logo-container {
   z-index: 1;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   grid-row: 1/2;
   grid-column: 1/4;
-  justify-content: flex-start;
   margin: 20px;
-  position: relative;
 }
 .logo {
   border: rgb(60, 170, 60) solid 0.2px;
   background-color: rgb(60, 170, 60);
   width: 15vmin;
-  aspect-ratio: 1/1;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   animation-name: logo;
@@ -146,31 +122,16 @@
   }
 }
 
-@media (max-width: 600px) {
-  .joe {
+@media (max-width: 550px) {
+  .h1 {
     font-size: 125%;
-  }
-  .web-dev {
-    font-size: 75%;
-  }
-  .hi {
-    font-size: 75%;
+    line-height: 200%;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 400px) {
   .h1 {
-    width: 90%;
-    line-height: 2;
-  }
-  .joe {
     font-size: 100%;
-  }
-  .web-dev {
-    font-size: 50%;
-    line-height: 3;
-  }
-  .hi {
-    font-size: 50%;
+    line-height: 200%;
   }
 }
