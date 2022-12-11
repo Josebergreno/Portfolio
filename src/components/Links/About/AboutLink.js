@@ -2,9 +2,9 @@ import styles from "./AboutLink.module.css";
 import logo from "../../UI/Icons/logo-cropped.svg";
 import avatar from "../../UI/Icons/avatar.svg";
 import { Link } from "react-router-dom";
+import Line from "./Line";
 
 const AboutLink = (props) => {
-  console.log(window.innerWidth / 6);
   return (
     <>
       <Link to="/about" onClick={props.onClick} className={styles["container"]}>
@@ -27,6 +27,7 @@ const AboutLink = (props) => {
         <div className={styles["logo-container"]}>
           <img className={styles["logo"]} src={logo} alt={"Logo"} />
         </div>
+        <Line />
       </Link>
     </>
   );

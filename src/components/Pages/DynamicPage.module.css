@@ -11,6 +11,7 @@
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
+  cursor: url("../../components/UI/Icons/cursor.png") 7 7, auto;
 }
 
 @keyframes mainContent {

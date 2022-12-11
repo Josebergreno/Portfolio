@@ -16,6 +16,7 @@
   flex-direction: column;
   border: solid rgb(60, 170, 60) 1px;
   border-radius: 5px;
+  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
 }
 
 .snake-game--thumbnail {
@@ -35,6 +36,7 @@
   font-family: "Press Start 2p", cursive;
   border-radius: 3px;
   transition: 0.2s;
+  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
 }
 .button:hover {
   transform: scale(1.1);

@@ -1,0 +1,27 @@
+.line-item {
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  animation-name: line;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-bottom-right-radius: 25px;
+  height: 20px;
+}
+@keyframes line {
+  0% {
+    transform: translate(0, -3000%);
+  }
+
+  100% {
+    color: #49ff18;
+  }
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  border-bottom-right-radius: 25px;
+}

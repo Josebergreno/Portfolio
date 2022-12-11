@@ -9,8 +9,13 @@
 
 .email-href {
   color: rgb(60, 170, 60);
+  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
+  transition: 0.2s;
 }
-
+.email-href:hover {
+  transform: scale(2);
+  color: blue;
+}
 .link-container {
   width: 100%;
   max-width: 600px;
@@ -36,6 +41,7 @@
 .icon {
   width: 10vmin;
   transition: 0.2s;
+  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
 }
 .icon:hover {
   transform: scale(1.2);
@@ -44,6 +50,7 @@
   width: 10vmin;
   transition: 0.2s;
   filter: invert(100%);
+  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
 }
 .github-icon:hover {
   transform: scale(1.2);

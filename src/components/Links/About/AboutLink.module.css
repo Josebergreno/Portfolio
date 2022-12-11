@@ -6,11 +6,13 @@
   grid-row: 1/3;
   grid-column: 1/3;
   border: none;
-
   border-radius: 0px 0px 25px 0px;
-  border-right: solid rgb(60, 170, 60) 2px;
-  border-bottom: solid rgb(60, 170, 60) 2px;
+  border-right: solid rgb(60, 170, 60) 4px;
+  border-bottom: solid rgb(60, 170, 60) 4px;
   transition: 0.2s;
+  box-shadow: -20px -20px 100px 0px green inset;
+  -webkit-box-shadow: -20px -20px 100px 0px green inset;
+  -moz-box-shadow: -20px -20px 100px 0px green inset;
   cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
 }
 
