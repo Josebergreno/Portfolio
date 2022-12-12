@@ -10,6 +10,7 @@ import ContactPage from "./Contact Page/ContactPage";
 import AboutPage from "./About Page/AboutPage";
 import SkillsPage from "./Skills Page/SkillsPage";
 import PastProjectsPage from "./Past Projects Page/PastProjectsPage";
+import Line from "../Links/About/Line";
 
 const DynamicPage = (props) => {
   const { handle } = useParams();
@@ -65,6 +66,7 @@ const DynamicPage = (props) => {
     <CmdLineLayout handle={handle} />
   ) : (
     <div className={styles["layout"]}>
+      <Line></Line>
       <div className={styles["about"]}>
         <h2 className={styles["header"]}>{headerContent()}</h2>
         <Divider
@@ -78,8 +80,8 @@ const DynamicPage = (props) => {
       </div>
       <div className={styles["logo-container"]}>
         <img className={styles["logo"]} src={logo} alt={"Logo"} />
+        <BreadCrumbs contentHeader={headerContent()} />
       </div>
-      <BreadCrumbs contentHeader={headerContent()} />
     </div>
   );
 };

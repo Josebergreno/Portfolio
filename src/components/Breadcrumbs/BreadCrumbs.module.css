@@ -20,24 +20,24 @@
 .link {
   font-family: "Press Start 2P", cursive;
   font-size: small;
-  color: black;
+  color: rgb(60, 170, 60);
   cursor: url("../../components/UI/Icons/cursor.png") 7 7, auto;
 }
 .link:hover {
-  opacity: 50%;
+  opacity: 80%;
 }
 
 /* current location */
 .current-location {
   font-family: "Press Start 2P", cursive;
   font-size: small;
-  color: black;
+  color: rgb(60, 170, 60);
   margin-left: 5px;
 }
 /* > */
 .seperator {
   font-family: "Press Start 2P", cursive;
   font-size: small;
-  color: black;
+  color: rgb(60, 170, 60);
   margin-left: 5px;
 }

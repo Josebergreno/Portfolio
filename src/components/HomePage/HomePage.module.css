@@ -1,4 +1,11 @@
 .page-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.link-container {
   margin: 0;
   width: 100vw;
   height: 95vh;
@@ -6,7 +13,6 @@
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  /* background-color: rgb(12, 106, 12); */
   background-color: black;
 }
 .bottom {

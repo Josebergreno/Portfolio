@@ -2,10 +2,13 @@
 .layout {
   width: 100vw;
   height: 100vh;
-  background-color: green;
+  background-color: black;
   display: grid;
   grid-template-columns: 10fr 80fr 10fr;
   grid-template-rows: 20fr 60fr 20fr;
+  box-shadow: -20px -20px 100px 0px green inset;
+  -webkit-box-shadow: -20px -20px 100px 0px green inset;
+  -moz-box-shadow: -20px -20px 100px 0px green inset;
   animation-name: mainContent;
   animation-duration: 0.5s;
   animation-direction: normal;
@@ -25,19 +28,21 @@
 
 /* Main Content */
 .about {
+  z-index: 2;
   grid-row: 2/3;
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
   border: none;
   background-color: rgb(56, 55, 55);
+
+  border-top: solid rgb(60, 170, 60) 4px;
+  border-bottom: solid rgb(60, 170, 60) 4px;
   border-radius: 25px;
   transition: 0.2s;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset;
 }
 
 .avatar-container {
@@ -49,7 +54,8 @@
   margin: 20px;
 }
 .avatar {
-  width: 10vmin;
+  z-index: 2;
+  width: 15vmin;
   border-radius: 50%;
 }
 
@@ -62,10 +68,10 @@
   margin: 20px;
 }
 .logo {
-  border: black solid 0.2px;
-  width: 10vmin;
+  z-index: 1;
+  background-color: rgb(60, 170, 60);
+  width: 15vmin;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   animation-name: logo;
   animation-duration: 10s;
   animation-direction: normal;

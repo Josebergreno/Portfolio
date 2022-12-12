@@ -24,8 +24,8 @@ const HomePage = (props) => {
   };
 
   return (
-    <>
-      <div className={styles["page-container"]}>
+    <div className={styles["page-container"]}>
+      <div className={styles["link-container"]}>
         <SkillsLink
           onClick={() => skillsHandler()}
           linkLocation={linkLocation}
@@ -56,7 +56,7 @@ const HomePage = (props) => {
         />
       </div>
       <Outlet />
-    </>
+    </div>
   );
 };
 
