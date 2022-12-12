@@ -35,20 +35,45 @@
   align-items: center;
   justify-content: center;
 }
-.h1 {
-  z-index: 1;
-  margin: 0;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  line-height: 150%;
-  color: rgb(60, 170, 60);
-  font-family: "Press Start 2P", cursive;
-}
 
 .joe {
   font-size: 150%;
+}
+.flicker {
+  animation-name: flicker;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+@keyframes flicker {
+  0% {
+    opacity: 100%;
+    font-size: 103%;
+  }
+  25% {
+    opacity: 80%;
+    font-size: 100%;
+    text-shadow: 4px 5px 3px green;
+  }
+  30% {
+    text-shadow: -4px 5px 3px green;
+  }
+  50% {
+    opacity: 100%;
+    font-size: 103%;
+    text-shadow: 4px 5px 3px green;
+  }
+  75% {
+    opacity: 90%;
+    text-shadow: 4px 0px 10px green;
+  }
+}
+.span {
+  transition: 0.2s;
+}
+.span:hover {
+  border: solid rgb(60, 170, 60) 1px;
+  font-size: 105%;
 }
 
 .click-here--container {
@@ -134,4 +159,16 @@
     font-size: 100%;
     line-height: 200%;
   }
+}
+
+.h1 {
+  z-index: 1;
+  margin: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 150%;
+  color: rgb(60, 170, 60);
+  font-family: "Press Start 2P", cursive;
 }
