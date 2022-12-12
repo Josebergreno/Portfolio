@@ -1,11 +1,42 @@
 .page-container {
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   /* background-color: rgb(12, 106, 12); */
   background-color: black;
+}
+.bottom {
+  justify-content: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: rgb(60, 170, 60);
+  height: 5vh;
+}
+.webName {
+  margin-left: 5px;
+  text-shadow: 2px 4px 6px rgba(60, 170, 60, 0.69);
+}
+
+.icon {
+  height: 60%;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+@media (max-width: 500px) {
+  .bottom {
+    font-size: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .bottom {
+    font-size: 40%;
+  }
 }

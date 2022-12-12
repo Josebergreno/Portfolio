@@ -5,8 +5,10 @@
   align-items: center;
   grid-row: 3/4;
   grid-column: 1/2;
+  border-top: solid rgb(60, 170, 60) 5px;
+  border-bottom: solid rgb(60, 170, 60) 5px;
   background-color: rgb(56, 55, 55);
-  border-radius: 0 25px 0 0;
+  border-radius: 0 25px 25px 0;
   transition: 0.2s;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,

@@ -16,7 +16,7 @@ const AboutLink = (props) => {
     const interval = setInterval(() => {
       setRandomNum(Math.floor(Math.random() * 21) + 1);
       setActiveLetter(splitArr[randomNum]);
-    }, 5000);
+    }, (randomNum * 1000) / 6);
     return () => clearInterval(interval);
   }, [activeLetter, randomNum, splitArr]);
 

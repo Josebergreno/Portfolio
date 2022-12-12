@@ -8,6 +8,9 @@
   background-color: rgb(56, 55, 55);
   align-items: center;
   transition: 0.2s;
+  border-top: solid rgb(60, 170, 60) 5px;
+  border-bottom: solid rgb(60, 170, 60) 5px;
+  border-radius: 25px 0 0 25px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
