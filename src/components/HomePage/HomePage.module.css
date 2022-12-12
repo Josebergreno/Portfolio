@@ -16,6 +16,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   background-color: black;
+  border: none;
 }
 .bottom {
   justify-content: center;
@@ -30,6 +31,7 @@
 .webName {
   margin-left: 5px;
   text-shadow: 2px 4px 6px rgba(60, 170, 60, 0.69);
+  border: none;
 }
 
 .icon {

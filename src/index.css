@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow: visible;
   cursor: url("../src/components/UI/Icons/cursor.png") 7 7, auto;
 }
 
