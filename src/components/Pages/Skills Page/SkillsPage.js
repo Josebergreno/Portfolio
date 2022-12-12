@@ -21,6 +21,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -35,6 +36,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img alt={"mui-icon"} className={styles["icon"]} src={muiLogo} />
@@ -44,6 +46,7 @@ const SkillsPage = () => {
         <div
           tabIndex={0}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -59,6 +62,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -72,6 +76,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -85,6 +90,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -100,6 +106,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -113,6 +120,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -126,6 +134,7 @@ const SkillsPage = () => {
           tabIndex={0}
           ref={ref}
           onClick={clickHandler}
+          onTouchStart={clickHandler}
           className={styles["indiv-icon--container"]}
         >
           <img

@@ -7,3 +7,5 @@ const SkillsMainPage = () => {
 };
 
 export default SkillsMainPage;
+
+// create a page that conditionally renders main page with breadcrumbs that will bring back to main page based off of ref in skills page
