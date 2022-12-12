@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: visible;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: antiquewhite;
 }
 
 .link-container {
   margin: 0;
-  width: 100vw;
   height: 95vh;
   display: grid;
   gap: 10px;
@@ -31,7 +33,7 @@
 }
 
 .icon {
-  height: 60%;
+  height: 3vmin;
   margin-left: 3px;
   margin-right: 3px;
 }
