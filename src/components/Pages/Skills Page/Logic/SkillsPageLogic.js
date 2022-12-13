@@ -13,6 +13,14 @@ const SkillsPageLogic = (props) => {
         ? e.target.lastChild.textContent
         : e.target.parentElement.lastChild.textContent;
     ref.current === "Material-UI" && setRefState(ref.current);
+    ref.current === "React" && setRefState(ref.current);
+    ref.current === "Typescript" && setRefState(ref.current);
+    ref.current === "Javascript" && setRefState(ref.current);
+    ref.current === "CSS" && setRefState(ref.current);
+    ref.current === "HTML" && setRefState(ref.current);
+    ref.current === "Responsive Design" && setRefState(ref.current);
+    ref.current === "git" && setRefState(ref.current);
+    ref.current === "Github" && setRefState(ref.current);
   };
   const backClickHandler = () => {
     ref.current = "back";

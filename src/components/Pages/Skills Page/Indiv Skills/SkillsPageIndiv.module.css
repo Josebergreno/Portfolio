@@ -8,10 +8,10 @@
 }
 
 .button {
-  margin-left: 20px;
+  margin-left: 30px;
   min-width: 10vmin;
   width: 20vmin;
-  height: 5vmin;
+  height: 4vmin;
   background-color: rgb(60, 170, 60);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border: solid black 1px;
@@ -25,7 +25,7 @@
 }
 
 .header {
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   align-items: center;
   width: 100%;
@@ -33,7 +33,7 @@
 }
 
 .title {
-  margin-right: 20px;
+  padding-right: 30px;
   color: rgb(60, 170, 60);
 }
 
@@ -41,7 +41,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   color: gray;
   height: 90%;
   margin: 10px;
+}
+
+@media (max-width: 1000px) {
+  .description {
+    font-size: 75%;
+  }
+  .title {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 400px) {
+  .description {
+    font-size: 60%;
+  }
+  .title {
+    font-size: 60%;
+  }
 }
