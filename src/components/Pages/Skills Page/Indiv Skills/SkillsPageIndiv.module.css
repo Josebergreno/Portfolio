@@ -1,0 +1,47 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: solid rgb(60, 170, 60) 2px;
+  border-radius: 10%;
+}
+
+.button {
+  margin-left: 20px;
+  min-width: 10vmin;
+  width: 20vmin;
+  height: 5vmin;
+  background-color: rgb(60, 170, 60);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: solid black 1px;
+  font-family: "Press Start 2p", cursive;
+  border-radius: 3px;
+  transition: 0.2s;
+  cursor: url("../../../UI/Icons/cursor.png") 7 7, auto;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.title {
+  margin-right: 20px;
+  color: rgb(60, 170, 60);
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  height: 90%;
+  margin: 10px;
+}

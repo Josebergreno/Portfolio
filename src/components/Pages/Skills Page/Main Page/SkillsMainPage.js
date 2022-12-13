@@ -1,27 +1,17 @@
 import React from "react";
-import muiLogo from "../../../components/UI/Icons/material-ui.svg";
-import styles from "./SkillsPage.module.css";
-import responsiveIcon from "../../UI/Icons/responsive.svg";
-import { useRef } from "react";
-const SkillsPage = () => {
-  const ref = useRef("");
-  const clickHandler = (e) => {
-    e.target.focus();
+import responsiveIcon from "../../../UI/Icons/responsive.svg";
+import styles from "./SkillsMainPage.module.css";
 
-    ref.current =
-      e.target.localName === "DIV"
-        ? e.target.lastChild.textContent
-        : e.target.parentElement.lastChild.textContent;
-    console.log(ref.current);
-  };
+import muiLogo from "../../../../components/UI/Icons/material-ui.svg";
+const SkillsMainPage = (props) => {
   return (
     <div className={styles["svg-main--container"]}>
       <div className={styles["row-container"]}>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -34,9 +24,9 @@ const SkillsPage = () => {
 
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img alt={"mui-icon"} className={styles["icon"]} src={muiLogo} />
@@ -45,8 +35,9 @@ const SkillsPage = () => {
 
         <div
           tabIndex={0}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
+          reference={props.reference}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -60,9 +51,9 @@ const SkillsPage = () => {
       <div className={styles["row-container"]}>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -74,9 +65,9 @@ const SkillsPage = () => {
         </div>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -88,9 +79,9 @@ const SkillsPage = () => {
         </div>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -104,9 +95,9 @@ const SkillsPage = () => {
       <div className={styles["row-container"]}>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -118,9 +109,9 @@ const SkillsPage = () => {
         </div>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -132,9 +123,9 @@ const SkillsPage = () => {
         </div>
         <div
           tabIndex={0}
-          ref={ref}
-          onClick={clickHandler}
-          onTouchStart={clickHandler}
+          reference={props.reference}
+          onClick={props.onClick}
+          onTouchStart={props.onClick}
           className={styles["indiv-icon--container"]}
         >
           <img
@@ -149,4 +140,4 @@ const SkillsPage = () => {
   );
 };
 
-export default SkillsPage;
+export default SkillsMainPage;

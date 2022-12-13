@@ -8,7 +8,7 @@ import BreadCrumbs from "../Breadcrumbs/BreadCrumbs";
 import CmdLineLayout from "../CommandLine/Layout/CmdLineLayout";
 import ContactPage from "./Contact Page/ContactPage";
 import AboutPage from "./About Page/AboutPage";
-import SkillsPage from "./Skills Page/SkillsPage";
+import SkillsPage from "./Skills Page/Logic/SkillsPageLogic";
 import PastProjectsPage from "./Past Projects Page/PastProjectsPage";
 import Line from "../Links/About/Line";
 

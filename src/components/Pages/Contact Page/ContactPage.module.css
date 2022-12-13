@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: url("../../../components/UI/Icons/cursor.png") 7 7, auto;
 }
 .how-to--contact {
   color: gray;
@@ -9,7 +10,7 @@
 
 .email-href {
   color: rgb(60, 170, 60);
-  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
+  cursor: url("../../../components/UI/Icons/cursor.png") 7 7, auto;
   transition: 0.2s;
 }
 .email-href:hover {
@@ -23,6 +24,7 @@
   height: 90%;
   justify-content: space-around;
   align-items: center;
+  cursor: url("../../../components/UI/Icons/cursor.png") 7 7, auto;
 }
 .link-container--parent {
   width: 100%;
@@ -41,7 +43,7 @@
 .icon {
   width: 10vmin;
   transition: 0.2s;
-  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
+  cursor: url("../../../components/UI/Icons/cursor.png") 7 7, auto;
 }
 .icon:hover {
   transform: scale(1.2);
@@ -50,7 +52,7 @@
   width: 10vmin;
   transition: 0.2s;
   filter: invert(100%);
-  cursor: url("../../UI/Icons/cursor.png") 7 7, auto;
+  cursor: url("../../../components/UI/Icons/cursor.png") 7 7, auto;
 }
 .github-icon:hover {
   transform: scale(1.2);
